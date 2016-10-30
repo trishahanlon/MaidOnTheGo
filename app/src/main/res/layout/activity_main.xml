@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.uis.thanl2.maidonthego.MainActivity">
+
+        <ImageButton
+            app:srcCompat="@drawable/nylon"
+            android:id="@+id/nylonButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_alignTop="@+id/linenButton"
+            android:layout_alignLeft="@+id/denimButton"
+            android:layout_alignStart="@+id/denimButton"
+            android:backgroundTint="@android:color/background_light" />
+
+        <ImageButton
+            app:srcCompat="@drawable/satin"
+            android:id="@+id/satinButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_alignTop="@+id/polyesterButton"
+            android:layout_alignLeft="@+id/nylonButton"
+            android:layout_alignStart="@+id/nylonButton"
+            android:backgroundTint="@android:color/background_light" />
+
+        <ImageButton
+            app:srcCompat="@drawable/wool2"
+            android:id="@+id/woolButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_alignTop="@+id/silkButton"
+            android:layout_alignLeft="@+id/satinButton"
+            android:layout_alignStart="@+id/satinButton"
+            android:backgroundTint="@android:color/background_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title1"
+            android:fontFamily="sans-serif"
+            android:text="Selct Your Fabric Type"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            app:srcCompat="@drawable/denim"
+            android:id="@+id/denimButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_alignTop="@+id/cottonButton"
+            android:layout_alignRight="@+id/title1"
+            android:layout_alignEnd="@+id/title1"
+            android:backgroundTint="@android:color/background_light" />
+
+        <TextView
+            android:text="Denim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/denimButton"
+            android:layout_alignEnd="@+id/denimButton"
+            android:id="@+id/denimLabel"
+            android:layout_below="@+id/denimButton"
+            android:layout_alignLeft="@+id/denimButton"
+            android:layout_alignStart="@+id/denimButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Nylon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linenLabel"
+            android:layout_alignLeft="@+id/nylonButton"
+            android:layout_alignStart="@+id/nylonButton"
+            android:id="@+id/nylonLabel"
+            android:layout_alignRight="@+id/nylonButton"
+            android:layout_alignEnd="@+id/nylonButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Satin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/satinButton"
+            android:layout_alignLeft="@+id/satinButton"
+            android:layout_alignStart="@+id/satinButton"
+            android:id="@+id/satinLabel"
+            android:layout_alignRight="@+id/satinButton"
+            android:layout_alignEnd="@+id/satinButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Silk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/woolButton"
+            android:layout_alignLeft="@+id/silkButton"
+            android:layout_alignStart="@+id/silkButton"
+            android:id="@+id/silkLabel"
+            android:layout_alignRight="@+id/silkButton"
+            android:layout_alignEnd="@+id/silkButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Wool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/woolButton"
+            android:layout_alignLeft="@+id/woolButton"
+            android:layout_alignStart="@+id/woolButton"
+            android:id="@+id/woolLabel"
+            android:layout_alignRight="@+id/woolButton"
+            android:layout_alignEnd="@+id/woolButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Cotton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cottonLabel"
+            android:layout_alignLeft="@+id/cottonButton"
+            android:layout_alignStart="@+id/cottonButton"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_below="@+id/cottonButton"
+            android:layout_alignRight="@+id/cottonButton"
+            android:layout_alignEnd="@+id/cottonButton" />
+
+        <TextView
+            android:text="Linen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linenLabel"
+            android:layout_below="@+id/linenButton"
+            android:layout_alignLeft="@+id/linenButton"
+            android:layout_alignStart="@+id/linenButton"
+            android:layout_alignRight="@+id/linenButton"
+            android:layout_alignEnd="@+id/linenButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:text="Polyester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/polyesterLabel"
+            android:layout_below="@+id/polyesterButton"
+            android:layout_alignLeft="@+id/polyesterButton"
+            android:layout_alignStart="@+id/polyesterButton"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/polyester"
+            android:id="@+id/polyesterButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@android:color/background_light"
+            android:layout_below="@+id/linenLabel"
+            android:layout_alignLeft="@+id/linenLabel"
+            android:layout_alignStart="@+id/linenLabel" />
+
+        <ImageButton
+            app:srcCompat="@drawable/silkscarf"
+            android:id="@+id/silkButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/background_light"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/polyesterLabel"
+            android:layout_alignLeft="@+id/polyesterLabel"
+            android:layout_alignStart="@+id/polyesterLabel"
+            android:layout_height="80dp" />
+
+        <ImageButton
+            app:srcCompat="@drawable/linen"
+            android:id="@+id/linenButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="27dp"
+            android:backgroundTint="@android:color/background_light"
+            android:layout_below="@+id/cottonLabel"
+            android:layout_alignLeft="@+id/cottonButton"
+            android:layout_alignStart="@+id/cottonButton" />
+
+        <ImageButton
+            app:srcCompat="@drawable/cotton2"
+            android:id="@+id/cottonButton"
+            android:scaleType="fitXY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:elevation="6dp"
+            android:cropToPadding="true"
+            android:layout_marginTop="14dp"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/background_light"
+            android:layout_below="@+id/title1"
+            android:layout_alignLeft="@+id/title1"
+            android:layout_alignStart="@+id/title1" />
+    </RelativeLayout>
+</ScrollView>

@@ -27,6 +27,7 @@
             android:layout_alignTop="@+id/linenButton"
             android:layout_alignLeft="@+id/denimButton"
             android:layout_alignStart="@+id/denimButton"
+            android:onClick="selectNylon"
             android:backgroundTint="@android:color/background_light" />
 
         <ImageButton
@@ -41,6 +42,7 @@
             android:layout_alignTop="@+id/polyesterButton"
             android:layout_alignLeft="@+id/nylonButton"
             android:layout_alignStart="@+id/nylonButton"
+            android:onClick="selectPolyester"
             android:backgroundTint="@android:color/background_light" />
 
         <ImageButton
@@ -55,6 +57,7 @@
             android:layout_alignTop="@+id/silkButton"
             android:layout_alignLeft="@+id/satinButton"
             android:layout_alignStart="@+id/satinButton"
+            android:onClick="selectWool"
             android:backgroundTint="@android:color/background_light" />
 
         <TextView
@@ -79,6 +82,7 @@
             android:layout_alignTop="@+id/cottonButton"
             android:layout_alignRight="@+id/title1"
             android:layout_alignEnd="@+id/title1"
+            android:onClick="selectDenim"
             android:backgroundTint="@android:color/background_light" />
 
         <TextView
@@ -118,6 +122,7 @@
             android:layout_alignRight="@+id/satinButton"
             android:layout_alignEnd="@+id/satinButton"
             android:textAlignment="center"
+            android:onClick="selectSatin"
             android:textSize="24sp" />
 
         <TextView
@@ -211,6 +216,7 @@
             android:layout_below="@+id/polyesterLabel"
             android:layout_alignLeft="@+id/polyesterLabel"
             android:layout_alignStart="@+id/polyesterLabel"
+            android:onClick="selectSilk"
             android:layout_height="80dp" />
 
         <ImageButton
@@ -226,6 +232,7 @@
             android:backgroundTint="@android:color/background_light"
             android:layout_below="@+id/cottonLabel"
             android:layout_alignLeft="@+id/cottonButton"
+            android:onClick="selectLinen"
             android:layout_alignStart="@+id/cottonButton" />
 
         <ImageButton
@@ -237,11 +244,11 @@
             android:elevation="6dp"
             android:cropToPadding="true"
             android:layout_marginTop="14dp"
-            style="@style/Widget.AppCompat.ImageButton"
             android:adjustViewBounds="true"
             android:backgroundTint="@android:color/background_light"
             android:layout_below="@+id/title1"
             android:layout_alignLeft="@+id/title1"
+            android:onClick="selectCotton"
             android:layout_alignStart="@+id/title1" />
     </RelativeLayout>
 </ScrollView>

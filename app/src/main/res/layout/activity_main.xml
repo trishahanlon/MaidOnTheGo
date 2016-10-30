@@ -15,6 +15,13 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="com.uis.thanl2.maidonthego.MainActivity">
 
+        <include
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            layout="@layout/select_stain"
+            >
+        </include>
+
         <ImageButton
             app:srcCompat="@drawable/nylon"
             android:id="@+id/nylonButton"
